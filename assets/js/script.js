@@ -60,4 +60,7 @@ const cardArray = [
     }
 ]
 
+//This shuffles the array randomly by seeing it the value is smaller than 0.5 or larger than 0.5
+cardArray.sort(() => 0.5 - Math.random())
+
 console.log(cardArray);
