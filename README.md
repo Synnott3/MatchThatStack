@@ -12,3 +12,9 @@ I designned this game to be simple as it was made for my nephews - but it has ro
 
 [Responsivity](https://ui.dev/amiresponsive?url=https://synnott3.github.io/MatchThatStack/)
 
+### Exisiting Features
+
+#### The Simple Strong Header 
+
+I did have a logo at the top of this page but it came into conflic of the fact I was using the SCR tag to cause my images to flip so had to be removed, but it helped bring the website back down to its base idea - which was to make an website that would have a fun game that could be easily updated and chagned for my  Nephews. 
+
