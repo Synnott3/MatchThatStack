@@ -8,3 +8,7 @@ The scroed is based on if you get a matching pair or not!
 
 I designned this game to be simple as it was made for my nephews - but it has room to be made into more for any people. The way the code is done, just a simple swap out of images, or even adding more and more to incase the challenge and difficulty.
 
+![amiresponsive-screenshot](assets/images/ReadmeImg/Layout.PNG)
+
+[Responsivity](https://ui.dev/amiresponsive?url=https://synnott3.github.io/MatchThatStack/)
+

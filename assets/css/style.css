@@ -2,7 +2,7 @@ body{
     background-color: #fffdfc;
     font-family: "Raleway", sans-serif;
     text-align: center;
-    color: #f38630;
+    color: #565656;
 
 }
 
@@ -11,15 +11,13 @@ body{
     color: #f38630;
 }
 
-.jumbotron {
-    background: transparent;
-    text-align: center;
-    margin-top: 40px;
-  }
+hr{
+    color: #f38630;
+}
 
 .h1 {
     text-align: center;
-    color: #f38630;
+    color: #565656;
     height: 6em;
     padding-right: 5px;
     margin-top: 10px;
@@ -58,7 +56,7 @@ img {
     text-align: center;
     text-decoration: none;
     padding-bottom:2px;
-    color: #f8f1f4;
+    color: #ffffff;
     margin-top: 80px;
     
   }
