@@ -70,8 +70,13 @@ function createBoard () {
         const card = document.createElement('img')
         card.setAttribute('src', 'assets/images/blank.png')
         card.setAttribute('date-type', i)
+        card.addEventListener('click', flipCard)
         gameareaDisplay.append(card)
     }
 }
 
 createBoard () 
+
+function flipCard () {
+    console.log('clicked')
+}
