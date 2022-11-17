@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
+//The image arrays for the card game
     const cardArray = [
         {
             name: 'beaver',
@@ -66,14 +66,14 @@ document.addEventListener('DOMContentLoaded', () => {
      * /This shuffles the array randomly by seeing if the value is smaller than 0.5 or larger than 0.5
      * The cardPicked array is a const as we are only pushing things into it
      */
-     cardArray.sort(() => 0.5 - Math.random())
+    cardArray.sort(() => 0.5 - Math.random())
 
     const gameareaDisplay = document.querySelector('.game-area')
     const scoreDisplay = document.querySelector('#score')
     let cardPicked = []
     let cardPickedId = []
     let cardsWon = []
-
+//Creates the game board
     function createBoard () {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     
-
+//The check for matches function
     function checkMatch() {
         const cards = document.querySelectorAll('img')
         const optionOneId = cardPickedId[0]
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('That is the same animal')
         }
 
-        
+ //Will replace with a white card if there is match!       
         else if (cardPicked[0]  == cardPicked[1]) {
             alert('It is a match!')
             cards[optionOneId].setAttribute('src', 'assets/images/Cards//white.png')
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('That was not it champ try again')
         }
         
-        
+//Winning text!     
         cardPicked = []
         cardPickedId = []
         scoreDisplay.textContent = cardsWon.length
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * and storing the cardID
      *Push items into the cardPicked Array 
     */
-
+//Flips the iamges based on timer as well as src tag
     function flipCard () {
         let cardId = this.getAttribute('data-type')
         cardPicked.push(cardArray[cardId].name)
