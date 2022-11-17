@@ -78,5 +78,6 @@ function createBoard () {
 createBoard () 
 
 function flipCard () {
-    console.log('clicked')
+    const cardId = this.getAttribute('date-type')
+    console.log('clicked', cardId)
 }
