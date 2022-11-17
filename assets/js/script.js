@@ -80,14 +80,21 @@ function createBoard () {
 
 createBoard () 
 
+function checkMatch(){
+    console.log("checking for the match")
+}
+
 /**
  * This function will flip the cards
  * the "this" keyword is allowing interaction with the elements we click 
  * and storing the cardID
+ *Push items into the cardPicked Array 
  */
 function flipCard () {
     const cardId = this.getAttribute('date-type')
     cardPicked.push(cardArray[cardId].name)
-    console.log('clicked', cardId)
-    console.log(cardPicked)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardPicked.length === 2){
+        setTimeout(checkMatch, 300)
+    }
 }
