@@ -11,12 +11,16 @@ body{
     color: #f38630;
 }
 
-.logo {
-    height: 6em;
-    padding-right: 5px;
-}
 
 .h1 {
+    text-align: center;
+    color: #f38630;
+    height: 6em;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+.h3 {
     text-align: center;
     color: #f38630;
     height: 6em;
@@ -24,14 +28,83 @@ body{
 }
 
 .game-area {
-    width: 400px;
-    height: 300px;
-    float: right;
-    position: relative;
-    left: -30%; /* or right 50% */
-    text-align: left;
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
     
 }
 
+img {
+    margin: 10px;
+}
 
 
+@media (min-width:767px) {
+    .photo-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+    }
+  }
+  
+  .photo-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  
+  .photo-gallery .intro p {
+    margin-bottom: 0;
+  }
+  
+  .photo-gallery .photos {
+    padding-bottom: 20px;
+  }
+  
+  .photo-gallery .item {
+    padding-bottom: 30px;
+  }
+  
+
+  /*---Form Button-----*/
+.btn {
+    font-family: Raleway, sans-serif;
+    color: #f8f1f4;
+    background-color: #92dce5;
+    float: left;
+  }
+  
+  /*---Contact Section-----*/
+  #contact{
+    font-family: Raleway, sans-serif;
+    color: #eee5e9;
+  }
+  
+  
+  .btn:hover {
+    color: #f8f1f4;
+    background-color: #7c7c7c;
+    transition: 0.4s;
+    opacity: 1;
+  }
+
+
+  /*---Footer-----*/
+.footer {
+    font-family: Raleway, sans-serif;
+    background: #f38630;
+    margin: auto;
+    padding-top: 6px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom:2px;
+    color: #f8f1f4;
+    margin-top: 80px;
+    
+  }
