@@ -60,7 +60,18 @@ const cardArray = [
     }
 ]
 
-//This shuffles the array randomly by seeing it the value is smaller than 0.5 or larger than 0.5
+//This shuffles the array randomly by seeing if the value is smaller than 0.5 or larger than 0.5
 cardArray.sort(() => 0.5 - Math.random())
 
-console.log(cardArray);
+const gameareaDisplay = document.querySelector('.game-area')
+
+function createBoard () {
+    for (let i = 0; i < cardArray.length; i++) {
+        const card = document.createElement('img')
+        card.setAttribute('src', 'assets/images/blank.png')
+        card.setAttribute('date-type', i)
+        gameareaDisplay.append(card)
+    }
+}
+
+createBoard () 
