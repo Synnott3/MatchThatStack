@@ -126,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * and storing the cardID
      *Push items into the cardPicked Array 
     */
+
+     
 //Flips the iamges based on timer as well as src tag
     function flipCard () {
         let cardId = this.getAttribute('data-type')
